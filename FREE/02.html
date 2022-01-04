@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper{
+            margin: 0px;
+            padding: 0px;
+            height: 1300px;
+        }
+        h1{
+            position: absolute;
+            top: 3px;
+            left: 750px;
+            text-align: center;
+        }
+        nav{
+            position: relative;
+            top: 67px;
+        }
+        #menu{
+            display: inline-block;
+            width: 100%;
+            height: 40px;
+           
+        }
+        #menu>li{
+            display: inline-block;
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+            margin-left: 10px;
+        }
+        .sub{
+            display: none;
+        }
+        .sub>li{
+            display: inline-block;
+            list-style: none;
+        }
+        #menu>li:hover .sub{
+            display: block;
+            position: absolute;
+            left: 10px;
+        }
+        #container{
+            float: left;
+            position: relative;
+            top: 65px;
+            left: 0px;
+        }
+        aside{
+            border: 1px solid gray;
+            float: left;
+            width: 200px;
+            height: 800px;
+        }
+        #contentgrp{
+            border: 1px solid pink;
+            width: 87.7%;
+            height: 800px;
+            position: relative;
+            top: 65px;
+            left: 1px;
+            float: left;
+            overflow: auto;
+        }
+        content{
+            float: left;
+            border: 1px solid blue;
+            width: 200px;
+            height: 200px;
+            margin: 7px 40px;
+        }
+        footer{
+            position: relative;
+            top: 880px;
+            left: 0px;
+            border: 1px solid red;
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>LOGO</h1>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="#">1번메뉴</a> 
+                    <ul class="sub">
+                        <li><a href="#">1sub</a></li>
+                        <li><a href="#">1sub</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">2번메뉴</a> 
+                    <ul class="sub">
+                        <li><a href="#">2sub</a></li>
+                        <li><a href="#">2sub</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">3번메뉴</a> 
+                    <ul class="sub">
+                        <li><a href="#">3sub</a></li>
+                        <li><a href="#">3sub</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="container">
+            <aside>
+                <ul>
+                    <li>회원가입</li>
+                    <li>길찾기</li>
+                    <li>정책</li>
+                </ul>
+            </aside>
+        </div>
+        <div id="contentgrp">
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+            <content></content>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+</html>

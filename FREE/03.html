@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #wrapper{
+            margin: 0px;
+            padding: 0px
+        }
+        #logo h1{
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 50px;
+            margin: 0px;
+            text-align: center;
+        }
+        nav{
+            background-color: darkgray;
+            margin-top: 2px;
+            width: 100%;
+            height: 40px;
+        }
+        #main>li{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .sub{
+            display: none;
+        }
+        .sub>li{
+            display: inline-block;
+        }
+        #main>li:hover .sub{
+            display: block;
+            position: absolute;
+            width: 100px;
+        }
+        #container{
+            width: 100%;
+            height: 850px;
+            position: relative;
+            top: 3px;
+            left: 0px;
+            background-color: lightyellow;
+        }
+        aside{
+            float:left;
+            width: 200px;
+            height: 800px;
+            position: relative;
+            top: 2px;
+            left: 0px;
+            background-color: white;
+        }
+        article{
+            width: 100%;
+            height: 40px;
+            background-color: gainsboro;
+        }
+        #contentgrp{
+            background-color: lightpink;
+            width: 75.8%;
+            height: 800px;
+            position: relative;
+            top: 2px;
+            left: 1px;
+            float: left;
+            overflow: auto;
+        }
+        content{
+            width: 350px;
+            height: 350px;
+            background-color: mistyrose;
+            margin: 2px 33px;
+            float: left;
+            text-align: center;
+        }
+        footer{
+            width: 100%;
+            height: 400px;
+            position: relative;
+            top: 2px;
+            left: 0px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="logo"><h1>LOGO</h1></div>
+        <nav>
+            <ul id="main">
+                <li>
+                    <a href="#">menu</a>
+                    <ul class="sub">
+                        <li>sub</li>
+                        <li>sub</li>
+                        <li>sub</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">menu</a>
+                    <ul class="sub">
+                        <li>sub</li>
+                        <li>sub</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">menu</a>
+                    <ul class="sub">
+                        <li>sub</li>
+                        <li>sub</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="container">
+            <article>article</article>
+            <aside>aside-left</aside>
+            <div id="contentgrp">
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+                <content>cont</content>
+            </div>
+            <aside>aside-right</aside>
+        </div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

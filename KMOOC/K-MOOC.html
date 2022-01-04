@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            flex-direction: row;
+        }
+        header img{
+            width: 180px;
+            height: 50px;
+        }
+        header input{
+            width: 300px;
+            height: 30px;
+            margin: 8px 20px;
+        }
+        header a{
+            position: relative;
+            top: 0px;
+            left: 52%;
+            margin:10px 10px;
+            text-decoration: none;
+            color: black;
+        }
+        nav{
+            width: 100%;
+            height: 35px;
+        }
+        #menu{
+            width: 100%;
+            height: 35px;
+        }
+        #menu li{
+            display: inline-block;
+            width: 200px;
+            height: 35px;
+        }
+        li a{
+            margin-left: 30px;
+            text-align: center;
+            line-height: 35px;
+            text-decoration: none;
+            color: black;
+        }
+        .submenu{
+            display: none;
+            margin-left: 30px;
+        }
+        #menu>li:hover .submenu{
+            display: block;
+            position: absolute;
+            left: 0px;
+        }
+       
+        #container{
+            border: 1px solid pink;
+            width: 100%;
+            height: 1000px;
+            margin-top: 50px;
+        }
+        article{
+            width: 60%;
+            height: 150px;
+            display: block;
+            animation-name: change;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+        @keyframes change{
+            from{background-image: url(http://www.kmooc.kr/static/images/banner1.png);}
+            to{background-image: url(http://www.kmooc.kr/static/images/banner2.png);}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="img/main.PNG">
+            <input>
+            <a href="#"><b>로그인</b></a>
+            <a href="#" style="color: blue;"><b>회원가입</b></a>
+            <a href="#"><b>Kor</b></a>
+            <a href="#" style="color: gray;"><b>Eng</b></a>
+        </header>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="#"><b>K-MOOC 소개</b></a>
+                    <ul class="submenu">
+                        <li><a href="#">K-MOOC란?</a></li>
+                        <li><a href="#">추진체계</a></li>
+                        <li><a href="#">참여기관</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><b>강좌찾기</b></a>
+                    <ul class="submenu">
+                        <li><a href="#">분야별강좌</a></li>
+                        <li><a href="#">묶음강좌</a></li>
+                        <li><a href="#">교양강좌</a></li>
+                        <li><a href="#">학점은행과정</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><b>커뮤니티</b></a>
+                    <ul class="submenu">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">뉴스</a></li>
+                        <li><a href="#">자료실</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">바라는점</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="container">
+            <aside></aside>
+            <article></article>
+            <div id="content-grp">
+                <content></content>
+                <content></content>
+                <content></content>
+                <content></content>
+                <content></content>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+</html>
