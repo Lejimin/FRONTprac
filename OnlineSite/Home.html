@@ -13,12 +13,16 @@
         #contimg2{width: 100%; height: 700px;}
         #contimg3{width: 100%; height: 700px;}
         #contimg4{width: 100%; height: 700px;}
+        #contentbar{padding: 0px; height: 59px; width: 100%; margin-top: -10px;}
+        #contentbar>label{margin-left: 420px;}
+        #contentbar>input{margin: 0px 20px;}
         #content2{margin-top: 50px;}
         .card>img{width: 400px; height: 250px;}
-        #footer{width: 100%; height: 400px; background-color: #64b4c2;}
+        #footer{width: 100%; height: 400px; background-color: #64b4c2; margin-top: 10px;}
         #foo1{width: 500px; height: 200px; position: relative; top: 80px;}
         #foo1>p{color: white; text-align: center; font-size: 20px;}
         #fooname{font-size: 35px;}
+        #logo{margin-top: -150px; margin-left: 730px;}
     </style>
 </head>
 <body>
@@ -56,6 +60,10 @@
     </div>
 
     <div id="content">
+      <div id="contentbar" class="p-3 mb-2 bg-info bg-gradient bg-opacity-50 text-dark">
+        <label>조건 검색 : </label>&nbsp;<input type="text" value="국가" class="border border-success">&nbsp;<input type="date" value="날짜" class="border border-success"> - <input type="date" value="날짜" class="border border-success"> 
+        <button type="button" class="btn btn-outline-primary" style="height: 35px; width: 70px;">검색</button>
+      </div>
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="2000">
@@ -89,7 +97,7 @@
                 <img src="img/cont1.jpg" class="card-img-top">
                 <div class="card-body">
                 <h5 class="card-title">볼리비아</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">주요여행지: <br>라파스, 코차밤바, 산타 크루즈, 타리, 우유니 사막, 티티카카 호수</p>
                 </div>
             </div>
             </div>
@@ -98,7 +106,7 @@
                 <img src="img/cont2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">샌프란시스코</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">주요여행지: <br>금문교, 페리 빌딩 마켓플레이스, 피어39, 골든 게이트 국립 보양지</p>
                 </div>
             </div>
             </div>
@@ -107,7 +115,7 @@
                 <img src="img/cont3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">몽골</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text">주요여행지: <br>울란바토르, 홉스굴 호, 테를지, 홍고린엘스, 욜링암, 바양작</p>
                 </div>
             </div>
             </div>
@@ -116,7 +124,7 @@
                 <img src="img/cont4.png" class="card-img-top" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">파리</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">주요여행지: <br>에펠탑, 루브르 박물관, 노트르담 대성당, 오르세 미술관</p>
                 </div>
             </div>
             </div>
@@ -127,7 +135,9 @@
         <div id="foo1">
             <p id="fooname">GoGo여행사</p><br><p>대구광역시 수성구 여행동123<br>Call: 053-345-1234<br>Email: GoGoTrip@naver.com</p>
         </div>
-
+        <div id="logo">
+          <img src="img/logo.PNG">
+        </div>
     </div>
 </body>
 </html>
